@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+    background-color: black;
+	margin:auto;
+	padding:0;
+	display: block;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.wrap{
+	width:98%;
+	overflow: auto;
+    background-color: white;
+	margin:10px auto;
+	padding: 10px 0;
+}
+.header{
+	width:80%;
+    height: 200px;
+    background-color: #333;
+	margin:0 auto;
+}
+.banner{
+	width: 80%;
+	height: 600px;
+	background-color: blueviolet;
+	margin:0 auto;
+}
+.content{
+	width: 80%;
+	height: 400px;
+	background-color: #CCC;
+	margin:0 auto;
+}
+.content2{
+	width: 80%;
+	height: 400px;
+	background-color: #999;
+	margin:0 auto;
+}
+.foot{
+	width: 80%;
+	height: 200px;
+	background-color: #333;
+	margin:0 auto;
+}
