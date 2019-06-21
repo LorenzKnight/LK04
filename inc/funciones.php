@@ -66,5 +66,15 @@ function MostrarEstado($estado)
 	}
 }
 
-
+function alternar($estado)
+{
+  if ($row_DatosConsulta['id'] % 2 == 0) 
+  {
+     echo 'b'; 
+    } 
+    else 
+    { 
+      echo 'a'; 
+    };
+}
 ?>
