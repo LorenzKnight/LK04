@@ -11,10 +11,10 @@ $password_con = "root";
 $con = mysqli_connect($hostname_con, $username_con, $password_con, $database_con);
 mysqli_set_charset($con, 'utf8');
 
-if (is_file("includes/funciones.php")) 
-include("includes/funciones.php"); 
+if (is_file("inc/funciones.php")) 
+include("inc/funciones.php"); 
 else
 {
-	include("../includes/funciones.php");
+	include("../inc/funciones.php");
 }
 ?>

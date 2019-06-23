@@ -1,6 +1,6 @@
 <?php
 
-$query_DatosConsulta1 = sprintf("SELECT * FROM news WHERE site = 1 AND position = 1");
+$query_DatosConsulta1 = sprintf("SELECT * FROM news WHERE site = 0 AND position = 1");
 $DatosConsulta1 = mysqli_query($con, $query_DatosConsulta1) or die(mysqli_error($con));
 $row_DatosConsulta1 = mysqli_fetch_assoc($DatosConsulta1);
 $totalRows_DatosConsulta1 = mysqli_num_rows($DatosConsulta1);

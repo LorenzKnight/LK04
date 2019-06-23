@@ -1,6 +1,4 @@
-<?php //MySQLi Fragmentos por http://www.dreamweaver-tutoriales.com
-//Copyright Jorge Vila 2015
-
+<?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
 {
@@ -66,7 +64,7 @@ function MostrarEstado($estado)
 	}
 }
 
-function alternar($estado)
+function alternar()
 {
   if ($row_DatosConsulta['id'] % 2 == 0) 
   {

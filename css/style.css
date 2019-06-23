@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allura|Zeyada&display=swap');
 body{
     background-color: black;
 	margin: auto;
@@ -25,11 +26,10 @@ p {
 	margin:1% auto;
 }
 #menu{
-	width: 488px;
+	width: 475px;
 	overflow: auto;
-	background-color: #999;
 	float: right;
-	margin-top: 30px;
+	margin-top: 0px;
 	font-size: 16px;
 	text-transform: uppercase;
 }
@@ -44,28 +44,82 @@ p {
 	list-style: none;
 }
 #menu ul li:hover {
-	background-color: white;
-	color: black;
+	background-color: rgba(0,0,0,.3);
+	color: white;
+	transition: 0.7s;
 }
-#menu ul li a {
+#menu a {
 	color: white;
 	text-decoration: none;
 	
 }
 a {
-	color: #999;
+	color: #000;
 	text-decoration: none;
 }
 a:visited {
-	color: white;
+	color: #000;
   }
+.img_in_banner{
+	width: 120%;
+	height:400%;
+	margin:-50% -5% -266.6% -5%;
+	margin-bottom:-450px;
+	filter: blur(7px);
+	-moz-filter: blur(7px);
+	-webkit-filter: blur(7px);
+	-o-filter: blur(7px);
+	-ms-filter: blur(7px);
+}
 .banner	{
 	width: 75%;
-	height: 740px;
-	background-image: url("../doc/img/banner02.jpg");
+	height: 710px;
+	background-image: url("../doc/img/frontend/banner02.jpg");
 	background-size: cover;
 	margin:70px auto 0;
 	clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+	padding-top: 30px;
+}
+.banner_d {
+	width: 75%;
+	height:230px;
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+	margin:70px auto;	
+}
+.cat_banner {
+	width: 100%;
+	height:250px;
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+	margin:0 auto 20px;
+	text-align: center;
+	background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.cat_banner_link {
+	width: 100%; 
+	height: 250px;
+}
+.cat_banner_link:hover {
+	background-color: rgba(0,0,0,.7);
+	transition: 0.7s;
+}
+.content_flayer2{
+	width: 100%;
+	margin:8% auto 0;
+	position: absolute;
+	text-transform: uppercase;
+	text-align:center;
+	color:#FFF;
+}
+.content_flayer3{
+	width:100%;
+	/*background-color: #06C;*/
+	position:absolute;
+	padding: 0;
 }
 .over_c{
 	width: 75%;
@@ -88,13 +142,13 @@ a:visited {
 .content {
 	width: 75%;
 	overflow: auto;
-	background-color: #CCC;
+	/*background-color: #CCC;*/
 	margin:0 auto 40px;
 }
 .u_info {
 	width: 100%;
 	height: 400px;
-	background-color: brown;
+	/*background-color: brown;*/
 	margin: 0 auto;
 }
 .txt_a {
@@ -137,6 +191,28 @@ a:visited {
 	display:inline-block;
 	vertical-align:middle;
 	line-height:normal;
+}
+.pic_zoom {
+	width: 100%;
+	height: 800px;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.dark_tone {
+	width: 100%;
+	height: 800px;
+	background-color: rgba(0,0,0,.3);
+	line-height:800px;
+}
+.pic_description {
+	width: 44%;
+	overflow: auto;
+	color: #FFF;
+	display:inline-block;
+	vertical-align:middle;
+	line-height:normal;
+	padding: 3%;
 }
 .foot{
 	width: 75%;
