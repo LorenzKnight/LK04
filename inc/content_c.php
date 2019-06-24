@@ -9,14 +9,14 @@ $totalRows_DatosConsulta2 = mysqli_num_rows($DatosConsulta2);
 
   <?php do { ?>
   <div class="u_info">
-    <div class="txt_<?php if($row_DatosConsulta['id'] % 2 == 0) { echo 'b'; } else { echo 'a'; }; ?>">
+    <div class="txt_<?php if($row_DatosConsulta2['id'] % 2 == 0) { echo 'b'; } else { echo 'a'; }; ?>">
       <div class="v_centrado">
         <h3 style="text-transform: uppercase; margin-bottom: 0;"><a href="details.php?id=<?php echo $row_DatosConsulta2['id']; ?>"><?php echo $row_DatosConsulta2['header']; ?></a></h3>
 
                 <P><?php 
 								  $texto = $row_DatosConsulta2['content'];
 								  if (strlen($texto) > 5) {
-									$texto = substr($texto,5,300).'...';
+									$texto = substr($texto,0,300).'...';
                   print '<div class="texto_original">'.$texto.'</div>';
                 ?></p>
                 <?php

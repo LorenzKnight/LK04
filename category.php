@@ -6,7 +6,7 @@ if (isset($VARIABLE)) {
 }
 ?>
 <?php
- $query_DatosConsulta = sprintf("SELECT * FROM news WHERE site=%s", GetSQLValueString($_GET["id"], "int")); 
+ $query_DatosConsulta = sprintf("SELECT * FROM categoria WHERE id_categoria=%s", GetSQLValueString($_GET["id"], "int")); 
  $DatosConsulta = mysqli_query($con, $query_DatosConsulta) or die(mysqli_error($con));
  $row_DatosConsulta = mysqli_fetch_assoc($DatosConsulta);
  $totalRows_DatosConsulta = mysqli_num_rows($DatosConsulta);
@@ -33,12 +33,7 @@ if (isset($VARIABLE)) {
             </div>
         </div>
         <?php include("inc/content_c.php"); ?>
-        <div class="foot">
-            <div class="v_centrado">
-                <img src="doc/img/frontend/LKlogoblack.png" alt="Lorenz Knight" height="75" width="52">
-                <p style="font-size: 14px; line-height:5px; text-decoration: underline;">Lorenz Knight</p>
-            </div>
-        </div>
+        <?php include("inc/foot.php"); ?>
     </div>
 </body>
 </html>
