@@ -258,13 +258,12 @@ a:visited {
 .bg_about_me {
 	width: 75%;
 	height:1000px;
-	background-image: url("../doc/img/frontend/banner04.jpg");
 	position:relative;
 	overflow:hidden;
 	text-align:center;
 	margin:70px auto;
 	background-repeat: no-repeat;
-	background-position: 100% 0%;
+	
 	/*filter:brightness(0.4);*/
 }
 .bgd_about_me {
